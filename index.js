@@ -6,7 +6,7 @@ function rgb_to_hex() {
     var ghex1 = g.toString(16);
     var bhex1 = b.toString(16);
     var hex1 = "Hex: #" + rhex1 + ghex1 + bhex1;
-    txt.innerHTML = hex1;
+    p.innerHTML = hex1;
 }
 
 function hex_to_rgb() {
@@ -15,5 +15,5 @@ function hex_to_rgb() {
     var ghex2 = hex2.charAt(2) + hex2.charAt(3);
     var bhex2 = hex2.charAt(4) + hex2.charAt(5);
     var rgb = "RGB: " + rhex2 + ", " + ghex2 + ", " + bhex2;
-    txt.innerHTML = rgb;
+    p.innerHTML = rgb;
 }
