@@ -1,24 +1,38 @@
-const btn1 = document.querySelector('.btn1');
-btn1.onclick = reloadElement;
-const btn2 = document.querySelector('.btn2');
-btn2.onclick = reloadElement;
+const tohex = document.querySelector('.tohex');
+tohex.onclick = toHex;
+const torgb = document.querySelector('.torgb');
+torgb.onclick = toRGB;
+const rtxt = document.querySelector('.rtxt');
+rtxt.id = document.querySelector('rtxt');
+rtxt.type.text;
+const gtxt = document.querySelector('.gtxt');
+gtxt.id = document.querySelector('gtxt');
+gtxt.type.text;
+const btxt = document.querySelector('.btxt');
+btxt.id = document.querySelector('btxt');
+btxt.type.text;
+const hextxt = document.querySelector('.hextxt');
+hextxt.id = document.querySelector('hextxt');
+hextxt.type.text;
+const p = document.querySelector('.p');
+p.id = document.querySelector('p');
 
 function toHex() {
     var r = +rtxt.value;
     var g = +gtxt.value;
     var b = +btxt.value;
-    var rhex1 = r.toString(16);
-    var ghex1 = g.toString(16);
-    var bhex1 = b.toString(16);
-    var hex1 = "Hex: #" + rhex1 + ghex1 + bhex1;
-    txt.innerHTML = hex1;
+    var rhex = r.toString(16);
+    var ghex = g.toString(16);
+    var bhex = b.toString(16);
+    var hex = "Hex: #" + rhex + ghex + bhex;
+    p.innerHTML = hex;
 }
 
 function toRGB() {
-    var hex2 = hextxt.value;
-    var rhex2 = hex2.charAt(0) + hex2.charAt(1);
-    var ghex2 = hex2.charAt(2) + hex2.charAt(3);
-    var bhex2 = hex2.charAt(4) + hex2.charAt(5);
-    var rgb = "RGB: " + rhex2 + ", " + ghex2 + ", " + bhex2;
-    txt.innerHTML = rgb;
+    var hex = hextxt.value;
+    var rhex = hex.charAt(0) + hex.charAt(1);
+    var ghex = hex.charAt(2) + hex.charAt(3);
+    var bhex = hex.charAt(4) + hex.charAt(5);
+    var rgb = "RGB: " + rhex + ", " + ghex + ", " + bhex;
+    p.innerHTML = rgb;
 }
