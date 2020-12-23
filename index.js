@@ -3,19 +3,14 @@ tohex.onclick = toHex;
 const torgb = document.querySelector('.torgb');
 torgb.onclick = toRGB;
 const rtxt = document.querySelector('.rtxt');
-rtxt.id = document.querySelector('rtxt');
-rtxt.type.text;
+rtxt.type = 'text';
 const gtxt = document.querySelector('.gtxt');
-gtxt.id = document.querySelector('gtxt');
-gtxt.type.text;
+gtxt.type = 'text';
 const btxt = document.querySelector('.btxt');
-btxt.id = document.querySelector('btxt');
-btxt.type.text;
+btxt.type = 'text';
 const hextxt = document.querySelector('.hextxt');
-hextxt.id = document.querySelector('hextxt');
-hextxt.type.text;
+hextxt.type = 'text';
 const p = document.querySelector('.p');
-p.id = document.querySelector('p');
 
 function toHex() {
     var r = +rtxt.value;
