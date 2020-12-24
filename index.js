@@ -13,9 +13,9 @@ hextxt.type = 'text';
 const p = document.querySelector('.p');
 
 function toHex() {
-    var r = +rtxt.value;
-    var g = +gtxt.value;
-    var b = +btxt.value;
+    var r = rtxt.value;
+    var g = gtxt.value;
+    var b = btxt.value;
     var rhex = r.toString(16);
     var ghex = g.toString(16);
     var bhex = b.toString(16);
