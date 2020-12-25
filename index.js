@@ -24,7 +24,7 @@ function toHex() {
 }
 
 function toRGB() {
-    var hex = hextxt.value;
+    var hex = +hextxt.value;
     var rhex = hex.charAt(0) + hex.charAt(1);
     var ghex = hex.charAt(2) + hex.charAt(3);
     var bhex = hex.charAt(4) + hex.charAt(5);
