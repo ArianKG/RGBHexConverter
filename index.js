@@ -19,7 +19,7 @@ function toHex() {
     var rhex = r.toString(16);
     var ghex = g.toString(16);
     var bhex = b.toString(16);
-    var hex = "Hex: #" + rhex + ghex + bhex;
+    var hex = 'Hex: #' + rhex + ghex + bhex;
     p.innerHTML = hex;
 }
 
@@ -28,6 +28,6 @@ function toRGB() {
     var rhex = hex.charAt(0) + hex.charAt(1);
     var ghex = hex.charAt(2) + hex.charAt(3);
     var bhex = hex.charAt(4) + hex.charAt(5);
-    var rgb = "RGB: " + rhex + ", " + ghex + ", " + bhex;
+    var rgb = 'RGB: ' + rhex + ', ' + ghex + ', ' + bhex;
     p.innerHTML = rgb;
 }
